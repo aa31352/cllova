@@ -1,0 +1,51 @@
+{
+  "name": "cllova",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "cllova": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsx src/cli/index.ts",
+    "start": "node dist/cli/index.js",
+    "serve": "tsx src/server/index.ts",
+    "lint": "eslint \"src/**/*.ts\" --max-warnings=0",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.2.1",
+    "@types/yargs": "^17.0.33",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "axios": "^1.11.0",
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^17.2.1",
+    "fastify": "^5.5.0",
+    "openai": "^5.12.2",
+    "pino": "^9.8.0",
+    "pino-pretty": "^13.1.1",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "yargs": "^18.0.0",
+    "zod": "^3.25.76"
+  }
+}

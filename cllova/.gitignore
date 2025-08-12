@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+.env
+coverage
+*.log
+.vscode
+.idea
+*.sqlite
+*.db
+/data/
+/dist/
+/.venv/
